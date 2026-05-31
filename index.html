@@ -105,6 +105,41 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
+        .how-it-works {
+            max-width: 700px;
+            width: 100%;
+            margin: 40px auto;
+        }
+        .how-it-works h2 {
+            color: #0d47a1;
+            margin-bottom: 30px;
+        }
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        .step img {
+            max-width: 220px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+            margin-bottom: 16px;
+        }
+        .step h3 {
+            color: #0d47a1;
+            margin: 0 0 8px 0;
+            font-size: 1rem;
+        }
+        .step p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 0;
+        }
         footer {
             margin-top: 40px;
             font-size: 0.9rem;
@@ -172,6 +207,31 @@
         <img src="assets/ruta-clientes.jpeg" alt="Ruta de clientes">
         <img src="assets/ubicacion-cliente.jpeg" alt="Ubicación de cliente con GPS">
     </div>
+
+    <section class="how-it-works" id="como-funciona">
+        <h2>¿Cómo funciona?</h2>
+
+        <div class="step">
+            <img src="assets/screenshot_05_editar_ruta.png" alt="Optimización de recorridos">
+            <h3>Optimización de recorridos</h3>
+            <p>La ruta muestra los clientes en orden numerado de visita (1 = primero, último = último).
+               El agente puede reordenar pulsando prolongadamente sobre cualquier cliente y escribiendo la nueva posición.</p>
+        </div>
+
+        <div class="step">
+            <img src="assets/screenshot_04_reporte_visitas.png" alt="Reportar visita">
+            <h3>Reporte de visita con GPS</h3>
+            <p>Desde el detalle de cada cliente, el agente puede reportar la visita realizada.
+               La acción registra la fecha, hora y coordenadas GPS al momento de la visita.</p>
+        </div>
+
+        <div class="step">
+            <img src="assets/screenshot_06_ubicaciones.png" alt="Ubicaciones del cliente">
+            <h3>Registro de ubicaciones del cliente</h3>
+            <p>El botón "Ubicaciones cliente" permite al agente registrar y visualizar
+               en el mapa las ubicaciones GPS del cliente, facilitando futuras visitas.</p>
+        </div>
+    </section>
 
     <hr>
 
