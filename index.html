@@ -1,220 +1,248 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SIAGC Mobile</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      color: #0d47a1;
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    p.description {
-      font-size: 1.1rem;
-      max-width: 600px;
-      margin: 0 auto 30px;
-    }
-
-    .features {
-      text-align: left;
-      max-width: 600px;
-      margin: 30px auto;
-    }
-
-    .features ul {
-      padding-left: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 20px 10px;
-      padding: 12px 24px;
-      background-color: #0d47a1;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #1565c0;
-    }
-
-    .screenshots {
-      margin-top: 30px;
-    }
-
-    .screenshots img {
-      max-width: 300px;
-      margin: 10px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIAGC Mobile - Gestión de Rutas de Cobranza</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        h1 {
+            color: #0d47a1;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        p.description {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .features {
+            text-align: left;
+            max-width: 600px;
+            margin: 30px auto;
+        }
+        .features ul {
+            padding-left: 20px;
+        }
+        .btn {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 12px 24px;
+            background-color: #0d47a1;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #1565c0;
+        }
+        .btn-outline {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            background-color: transparent;
+            color: #0d47a1;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            border: 2px solid #0d47a1;
+            transition: background 0.3s, color 0.3s;
+        }
+        .btn-outline:hover {
+            background-color: #0d47a1;
+            color: white;
+        }
+        .contact-section {
+            background: #e3f2fd;
+            border-radius: 12px;
+            padding: 30px 24px;
+            max-width: 600px;
+            width: 100%;
+            margin: 30px auto;
+            box-sizing: border-box;
+        }
+        .contact-section h2 {
+            color: #0d47a1;
+            margin-top: 0;
+        }
+        .contact-section p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        .badge-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 20px 0;
+        }
+        .badge {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .screenshots {
+            margin-top: 30px;
+        }
+        .screenshots img {
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
 </head>
-
 <body>
-
-  <h1>SIAGC Mobile</h1>
-  <p class="description">
-    Optimiza tus Rutas de Cobranza de forma eficiente con nuestra app móvil. Ideal para gestión eficiente de cobradores
-    y planificación de visitas.
-  </p>
-
-  <div class="features">
-    <h2>Características</h2>
-    <ul>
-      <li>Planificación de rutas de cobranza</li>
-      <li>Geolocalización en tiempo real</li>
-      <li>Sincronización con sistemas empresariales del cliente</li>
-    </ul>
-  </div>
-
-  <a class="btn"
-    href="https://github.com/siagc/siagc_mobile-presentacion/releases/download/v4.0.0.0/45.apk">Descargar
-    APK</a>
-
-  <div style="max-width: 600px; margin: 20px auto 30px; font-size: 0.9rem; color: #555;">
-    <p><strong>Nota:</strong> Es posible que debas permitir la instalación desde "orígenes desconocidos" en tu
-      dispositivo Android.</p>
-
-    <p><strong>¿Cómo hacerlo?</strong></p>
-    <p>Ve a <strong>Ajustes</strong> &gt; <strong>Seguridad</strong> (o <strong>Privacidad</strong>, según tu
-      dispositivo).</p>
-    <p>Activa la opción <strong>"Instalar aplicaciones de fuentes desconocidas"</strong> o <strong>"Permitir desde esta
-        fuente"</strong> para el navegador o gestor de archivos que utilizarás.</p>
-  </div>
-
-  <div class="screenshots">
-    <h2>Capturas</h2>
-    <img src="assets/dashboard.jpeg" alt="Captura 1" />
-    <img src="assets/ruta-clientes.jpeg" alt="Captura 2" />
-    <img src="assets/ubicacion-cliente.jpeg" alt="Captura 3" />
-  </div>
-
-  <footer>
-    <p><a href="#privacidad">Política de Privacidad</a></p>
-  </footer>
-
-  <hr style="margin: 40px 0;" />
-  <section id="privacidad" style="max-width: 800px; margin: auto; text-align: left;">
-    <h1>Política de Privacidad</h1>
-
-    <div>
-      <p><strong>Última actualización:</strong> 13 de mayo de 2025</p>
-      <p>Esta Política de Privacidad describe cómo <strong>SIAGC MOBILE</strong> recopila y trata la información en
-        relación con su función de <strong>gestión de rutas de cobranza</strong>.</p>
-      <p><em>La aplicación NO realiza préstamos, procesamiento de pagos ni manejo de dinero.</em></p>
-    </div>
-
-    <div>
-      <h2>1. Datos Recopilados</h2>
-      <p>Recopilamos únicamente lo necesario para funcionalidades básicas:</p>
-      <ul>
-        <li><strong>Ubicación aproximada/precisa</strong>: Para optimizar rutas en tiempo real.</li>
-        <li><strong>Nombres y direcciones</strong>: Proporcionados por la empresa usuaria para identificación.</li>
-        <li><strong>Números de teléfono</strong>: Para contacto durante gestiones (integrado en la app).</li>
-        <li><strong>Datos técnicos</strong>: Rendimiento de la app y errores (sin identificación personal).</li>
-      </ul>
-    </div>
-
-    <div>
-      <h2>2. Finalidad del Tratamiento</h2>
-      <ul>
-        <li>Planificación y seguimiento de rutas de cobranza/entregas.</li>
-        <li>Sincronización con sistemas empresariales del cliente.</li>
-        <li>Mejora técnica de la aplicación.</li>
-      </ul>
-      <p><em>No usamos datos para publicidad, marketing ni perfiles de usuario.</em></p>
-    </div>
-
-    <div>
-      <h2>3. Compartición de Datos</h2>
-      <p><strong>No compartimos datos con terceros</strong>. Toda la información se envía exclusivamente al servidor de
-        la
-        empresa que utiliza la aplicación.</p>
-    </div>
-
-    <div>
-      <h2>4. Seguridad</h2>
-      <ul>
-        <li><strong>Cifrado en tránsito</strong>: TLS 1.2+ para todas las comunicaciones.</li>
-        <li><strong>Almacenamiento</strong>: Datos en dispositivos móviles protegidos por autenticación.</li>
-        <li><strong>Eliminación automática</strong>: Datos de ubicación se borran tras 90 días.</li>
-      </ul>
-    </div>
-
-    <div>
-      <h2>5. Permisos Requeridos</h2>
-      <ul>
-        <li><strong>Ubicación (en primer y segundo plano)</strong>: Exclusivamente para trazar rutas durante las
-          jornadas
-          de cobro.</li>
-        <li><strong>Bluetooth</strong>: Exclusivamente para conectar con dispositivos de impresión (ej: terminales POS,
-          impresoras térmicas) y generar comprobantes físicos de cobro o entrega. No se usa para recopilar datos de
-          otros
-          dispositivos.</li>
-        <li><strong>Contactos/teléfono</strong>: Para llamar a clientes desde la app (sin almacenar registros de
-          llamadas).</li>
-        <li><strong>Almacenamiento</strong>: Guardar temporalmente datos de rutas y registros de cobranza.</li>
-        <li><strong>Cámara </strong>: Solo se usa para escanear el codigo QR de la empresa usuaria.</li>
-      </ul>
-      </ul>
-      <p>Todos los permisos se necesitan para el funcionamiento básico de la aplicación.</p>
-    </div>
-
-
-    <div>
-      <h2>6. Derechos de los Usuarios</h2>
-      <p>Los titulares de los datos pueden:</p>
-      <ul>
-        <li>Solicitar acceso o corrección de sus datos <strong>a través de la empresa que recopiló la
-            información</strong>.</li>
-        <li>Revocar permisos de ubicación desactivándolos en su dispositivo.</li>
-      </ul>
-      <p><em>SIAGC Mobile actúa como procesador de datos. Las solicitudes deben gestionarse con la empresa usuaria.</em>
-      </p>
-    </div>
-
-    <div>
-      <h2>7. Cambios en esta Política</h2>
-      <p>Notificaremos actualizaciones importantes mediante:</p>
-      <ul>
-        <li>Publicación destacada en nuestro sitio web.</li>
-      </ul>
-    </div>
-
-    <div>
-      <h2>8. Contacto</h2>
-      <p>Para preguntas sobre esta política, escribir a: <strong>siagc.mobile.000000@gmail.com</strong>.</p>
-    </div>
-
-    <p style="text-align: center; font-size: 0.9rem;">
-      <a href="privacidad.html" style="color: #ff9a8d;">Política de Privacidad</a>
+    <h1>SIAGC Mobile</h1>
+    <p class="description">
+        Plataforma SaaS para la gestión de rutas de cobranza y visitas de campo.
+        Disponible para cualquier empresa financiera, cooperativa o institución de microfinanzas.
     </p>
 
-</body>
+    <div class="features">
+        <h2>Características</h2>
+        <ul>
+            <li>Planificación y optimización de rutas de cobranza</li>
+            <li>Registro de visitas con geolocalización GPS en tiempo real</li>
+            <li>Sincronización con el sistema web de la empresa cliente</li>
+            <li>Reordenamiento manual de recorridos desde el dispositivo</li>
+            <li>Impresión de comprobantes vía Bluetooth</li>
+        </ul>
+    </div>
 
+    <div class="badge-row">
+        <span class="badge">Finanzas</span>
+        <span class="badge">Cooperativas</span>
+        <span class="badge">Microfinanzas</span>
+        <span class="badge">Empresas de cobro</span>
+    </div>
+
+    <section class="contact-section" id="contacto">
+        <h2>¿Tu empresa quiere usar SIAGC Mobile?</h2>
+        <p>
+            SIAGC es una plataforma multi-empresa. Cualquier organización del sector financiero
+            o de microfinanzas puede contratar el servicio y distribuir la app a sus agentes de campo.
+        </p>
+        <a href="mailto:siagc.mobile.000000@gmail.com?subject=Solicitud%20de%20informaci%C3%B3n%20-%20SIAGC%20Mobile&body=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20SIAGC%20Mobile%20para%20mi%20empresa."
+           class="btn">
+            Solicitar información
+        </a>
+        <br>
+        <small>También puedes escribir directamente a: siagc.mobile.000000@gmail.com</small>
+    </section>
+
+    <h2>Descarga la app</h2>
+    <a href="https://github.com/siagc/siagc_mobile-presentacion/releases/download/v4.0.0.0/45.apk"
+       class="btn-outline">
+        Descargar APK (Android)
+    </a>
+    <p style="font-size:0.9rem; color:#555; max-width:500px;">
+        <strong>iOS (App Store):</strong> Próximamente disponible en la App Store de Apple.
+    </p>
+
+    <p><strong>Nota Android:</strong> Es posible que debas permitir la instalación desde "orígenes desconocidos" en tu dispositivo Android.</p>
+    <h3>¿Cómo hacerlo?</h3>
+    <p>Ve a <strong>Ajustes</strong> &gt; <strong>Seguridad</strong> (o <strong>Privacidad</strong>, según tu dispositivo).</p>
+    <p>Activa la opción <strong>"Instalar aplicaciones de fuentes desconocidas"</strong> o
+        <strong>"Permitir desde esta fuente"</strong> para el navegador o gestor de archivos que utilizarás.</p>
+
+    <div class="screenshots">
+        <h2>Capturas</h2>
+        <img src="assets/dashboard.jpeg" alt="Dashboard SIAGC Mobile">
+        <img src="assets/ruta-clientes.jpeg" alt="Ruta de clientes">
+        <img src="assets/ubicacion-cliente.jpeg" alt="Ubicación de cliente con GPS">
+    </div>
+
+    <hr>
+
+    <section id="privacidad">
+        <h2>Política de Privacidad</h2>
+        <p><strong>Última actualización:</strong> 13 de mayo de 2025</p>
+
+        <p>Esta Política de Privacidad describe cómo <strong>SIAGC MOBILE</strong> recopila y trata
+            la información en relación con su función de <strong>gestión de rutas de cobranza</strong>.</p>
+
+        <p><em>La aplicación NO realiza préstamos, procesamiento de pagos ni manejo de dinero.</em></p>
+
+        <h3>1. Datos Recopilados</h3>
+        <p>Recopilamos únicamente lo necesario para funcionalidades básicas:</p>
+        <ul>
+            <li><strong>Ubicación aproximada/precisa:</strong> Para optimizar rutas en tiempo real.</li>
+            <li><strong>Nombres y direcciones:</strong> Proporcionados por la empresa usuaria para identificación.</li>
+            <li><strong>Números de teléfono:</strong> Para contacto durante gestiones (integrado en la app).</li>
+            <li><strong>Datos técnicos:</strong> Rendimiento de la app y errores (sin identificación personal).</li>
+        </ul>
+
+        <h3>2. Finalidad del Tratamiento</h3>
+        <ul>
+            <li>Planificación y seguimiento de rutas de cobranza/entregas.</li>
+            <li>Sincronización con sistemas empresariales del cliente.</li>
+            <li>Mejora técnica de la aplicación.</li>
+        </ul>
+        <p><em>No usamos datos para publicidad, marketing ni perfiles de usuario.</em></p>
+
+        <h3>3. Compartición de Datos</h3>
+        <p><strong>No compartimos datos con terceros.</strong> Toda la información se envía exclusivamente
+            al servidor de la empresa que utiliza la aplicación.</p>
+
+        <h3>4. Seguridad</h3>
+        <ul>
+            <li><strong>Cifrado en tránsito:</strong> TLS 1.2+ para todas las comunicaciones.</li>
+            <li><strong>Almacenamiento:</strong> Datos en dispositivos móviles protegidos por autenticación.</li>
+            <li><strong>Eliminación automática:</strong> Datos de ubicación se borran tras 90 días.</li>
+        </ul>
+
+        <h3>5. Permisos Requeridos</h3>
+        <ul>
+            <li><strong>Ubicación (en primer y segundo plano):</strong> Exclusivamente para trazar rutas durante las jornadas de cobro.</li>
+            <li><strong>Bluetooth:</strong> Exclusivamente para conectar con dispositivos de impresión (ej: terminales POS, impresoras térmicas) y generar comprobantes físicos.</li>
+            <li><strong>Contactos/teléfono:</strong> Para llamar a clientes desde la app (sin almacenar registros de llamadas).</li>
+            <li><strong>Almacenamiento:</strong> Guardar temporalmente datos de rutas y registros de cobranza.</li>
+            <li><strong>Cámara:</strong> Solo se usa para escanear el código QR de la empresa usuaria.</li>
+        </ul>
+        <p>Todos los permisos se necesitan para el funcionamiento básico de la aplicación.</p>
+
+        <h3>6. Derechos de los Usuarios</h3>
+        <p>Los titulares de los datos pueden:</p>
+        <ul>
+            <li>Solicitar acceso o corrección de sus datos <strong>a través de la empresa que recopiló la información.</strong></li>
+            <li>Revocar permisos de ubicación desactivándolos en su dispositivo.</li>
+        </ul>
+        <p><em>SIAGC Mobile actúa como procesador de datos. Las solicitudes deben gestionarse con la empresa usuaria.</em></p>
+
+        <h3>7. Cambios en esta Política</h3>
+        <p>Notificaremos actualizaciones importantes mediante:</p>
+        <ul>
+            <li>Publicación destacada en nuestro sitio web.</li>
+        </ul>
+
+        <h3>8. Contacto</h3>
+        <p>Para preguntas sobre esta política o para solicitar información del servicio,
+            escribir a: <strong>siagc.mobile.000000@gmail.com</strong></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SIAGC Mobile. Todos los derechos reservados.</p>
+    </footer>
+</body>
 </html>
